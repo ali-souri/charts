@@ -1,0 +1,101 @@
+/* 
+    Document   : mycharts
+    Created on : May 8, 2014, 5:29:45 PM
+    Author     : ali
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@font-face{font-family: bbc-nassim; src: url('../fonts/bbc-nassim-regular.ttf'),url('fonts/bbc-nassim-regular.eot');}
+
+root { 
+    display: block;
+}
+/*.app-header .app-nav-brand {
+    left: 0;
+}*/
+body{
+    background-color: #e1e9fb !important;
+    font-family: bbc-nassim !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+#page-box{
+    direction: rtl !important;
+    width: 80% !important;
+    margin: 0 auto !important;
+}
+#code-editor-container{
+    display: none;
+    margin-top: -50px;
+    min-height: 375px;
+    background-color: rgba(0,0,0,0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+#chart-iframe{
+    font-family: bbc-nassim;
+    width: 100%;
+    min-height: 430px;
+    background-color: #fff;
+}
+pre#editor{
+    margin-top: 5px;
+    min-height: 300px;
+}
+#chart-view{
+    font-family: bbc-nassim;
+    margin: 20px;
+    text-align: center;
+}
+#run{
+    font-family: bbc-nassim;
+    margin: 5px 70px 10px 10px;
+}
+/*.app-header .app-nav-brand-inner {
+    padding-left: 358px !important;
+}
+.app-header .navbar-main {
+    float: right !important;
+}*/
+#chart-title{
+    width: 100px;
+    float: right;
+    font-size: 23px;
+}
+#title{
+    margin-top: 15px;
+}
+#chart-name{
+    font-size: 22px;
+}
+.theme-button{
+    width: 36px;
+    height: 36px;
+    padding: 7px 0;
+    margin: 5px;
+    
+}
+.theme-img:hover{
+    border-color: #c7d4f2;
+}
+.active-theme-bottun{
+    border-color: #c7d4f2 !important;
+}
+.theme-img{
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(0,0,0,0);
+}
+.theme-list{
+    float: right;
+}
+.theme-list:first-child{
+    margin-top: 10px;
+}
+#charts-ul{
+    margin: -50px 160px 0 0;
+    position: absolute;
+}

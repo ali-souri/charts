@@ -1,0 +1,139 @@
+
+.skdslider {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.skdslider:after {
+    content: "";
+    display: block;
+    padding-top: 50%;
+}
+.skdslider ul.slides {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.skdslider ul.slides li {
+    display: none;
+}
+.skdslider ul.slides li img {
+    border: 0 none;
+    height: 100%;
+    width: 100%;
+}
+.skdslider ul.slide-navs {
+    bottom: 20px;
+    left: 50%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.skdslider ul.slide-navs li {
+    background: url("image/slide-bg.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    float: left;
+    height: 12px;
+    margin-right: 4px;
+    width: 12px;
+}
+.skdslider ul.slide-navs li.current-slide {
+    background: url("image/slide-bg-active.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.skdslider .slide-desc {
+    background: url("image/slide_desc.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 15%;
+    display: inline-block;
+    left: 0;
+    max-width: 85%;
+    padding: 0 15px;
+    position: absolute;
+}
+.skdslider .slide-desc > h2 {
+    color: #CFDB0C;
+    font-family: 'Oswald';
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.skdslider .slide-desc > p {
+    color: #000000;
+    font-family: 'Oswald';
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+.skdslider .slide-desc > p a.more {
+    color: #990000;
+    font-size: 20px;
+    text-decoration: none;
+}
+.skdslider .slide-desc > p a.more:hover {
+    text-decoration: underline;
+}
+.skdslider a.prev {
+    background: url("../image/left.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: block;
+    height: 35px;
+    left: 2%;
+    margin-top: -17px;
+    position: absolute;
+    top: 50%;
+    width: 35px;
+}
+.skdslider a.next {
+    background: url("../image/right.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: block;
+    height: 35px;
+    margin-top: -17px;
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    width: 35px;
+}
+.skdslider a.prev:hover {
+}
+.skdslider a.next:hover {
+}
+.skdslider a.play {
+    background: url("image/play.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: none;
+    height: 35px;
+    left: 48%;
+    margin-top: -17px;
+    position: absolute;
+    top: 50%;
+    width: 35px;
+}
+.skdslider a.pause {
+    background: url("image/pause.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: none;
+    height: 35px;
+    left: 48%;
+    margin-top: -17px;
+    position: absolute;
+    top: 50%;
+    width: 35px;
+}
+@media screen and (max-width: 767px) {
+.skdslider .slide-desc > h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.skdslider .slide-desc > p {
+    font-size: 14px;
+    line-height: 15px;
+    margin-top: 5px;
+}
+.skdslider .slide-desc > p a.more {
+    font-size: 14px;
+}
+}

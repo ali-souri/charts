@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Charts-View</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/cust.css"/>
+        <link rel="stylesheet" type="text/css" href="css/mycharts.css"/>
+        <!--        <link rel="stylesheet" type="text/css" href="css/uikit-.1.0.1.min.css"/>-->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/owner.css">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <link rel="stylesheet" type="text/css" href="css/rtl.css">
+        <link rel="stylesheet" type="text/css" href="css/uikit-.1.0.1.min.css">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/src-noconflict/ace.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/tooltip.js"></script>
+        <script type="text/javascript" src="js/charts-handler.js"></script>
+    </head>
+    <body>
+        <div class="app-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div role="navigation" class="navbar navbar-default">
+                            <div class="app-nav-brand">
+                                <div class="app-nav-brand-inner">
+                                    <a href="http://www.amcharts.com"><img alt="amCharts: JavaScript Charts and Maps" src="http://www.amcharts.com/wp-content/themes/amcharts/static/img/logo.png"></a>
+                                </div>
+                            </div>
+                            <ul class="nav navbar-nav navbar-main" id="menu-main-menu">
+
+                                <li class=" dropdown" id="nav-menu-item-112"><a href="list.html"><span>لیست چارت ها</span></a>
+                                </li>
+                                <li class="" id="nav-menu-item-138"><a href="download/download.php?f=amcharts.zip"><span>دانلود</span></a></li>
+                                <li class=" dropdown" id="nav-menu-item-208"><a href="index.html"><span>صفحه اصلی</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page-box">
+            <div id="title">
+                <p id="chart-title">نوع چارت:</p>
+                <i id="chart-name"></i>
+            </div>
+            <iframe id="chart-iframe" name="chart-iframe" src="#" sandbox="allow-scripts"></iframe>
+            <button id="chart-view" type="button" disabled="" class="btn btn-danger btn-small closed">نمایش کد</button>
+            <div id="code-editor-container">
+                <button id="run" class="btn btn-success btn-large" type="button">اجراء</button>
+                <ul id="charts-ul">
+                    <li class="theme-list"><i class="badge-inverse badge" >انتخاب قالب:</i></li>
+                    <li class="theme-list">
+                        <a class="theme-button" id="theme-default" data-theme="default" rel="tooltip" data-original-title="قالب اولیه">
+                            <img class="theme-img" src="img/theme_none.png"/>
+                        </a>
+                    </li>
+                    <li class="theme-list">
+                        <a class="theme-button" id="theme-patterns" data-theme="patterns" rel="tooltip" data-original-title="قالب الگو">
+                            <img class="theme-img" src="img/theme_pattern2.png"/>
+                        </a>
+                    </li>
+                    <li class="theme-list">
+                        <a class="theme-button" id="theme-chalk" data-theme="chalk" rel="tooltip" data-original-title="قالب تخته سیاه">
+                            <img class="theme-img" src="img/theme_chalk.png"/>
+                        </a>
+                    </li>
+                    <li class="theme-list">
+                        <a class="theme-button" id="theme-dark" data-theme="dark" rel="tooltip" data-original-title="قالب تیره">
+                            <img class="theme-img" src="img/theme_dark2.png"/>
+                        </a>
+                    </li>
+                    <li class="theme-list">
+                        <a class="theme-button" id="theme-light" data-theme="light" rel="tooltip" data-original-title="قالب روشن">
+                            <img class="theme-img" src="img/theme_light2.png"/>
+                        </a>
+                    </li>
+                </ul>
+                <pre id="editor"></pre>
+            </div>
+        </div>
+    </body>
+</html>

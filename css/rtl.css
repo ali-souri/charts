@@ -1,0 +1,82 @@
+h2 {
+	direction: rtl!important;
+}
+blockquote{
+	direction: rtl!important;
+	float : right!important;
+}
+.demo-1 .sl-slide blockquote p:before{
+	right: -80px!important;
+}
+.col-sm-4{
+	float : right!important;
+	/*direction: rtl!important;*/
+}
+p{
+	direction: rtl!important;
+	
+}
+.COlor{
+	background-color: #535364
+}
+
+.row {
+direction: rtl;
+}
+
+/*a {
+margin-right: 12px;
+}*/
+
+.product-icon {
+background-image: url('../img/icon_sprite.png');
+
+}
+.icon-sprite {
+background-image: url('../img/icon_sprite_sub.png');
+}
+
+/*@font-face{
+font-family: bnazanin;
+src: url(../fonts/BNazanin.woff);
+}*/
+@font-face{
+font-family: bbc-nassim;
+src: url(../fonts/bbc-nassim-regular.woff);
+}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+font-family: bbc-nassim !important;
+	}
+        
+        .section-overview ul > li, .app-content ul>li, .list-square>li{
+            padding-bottom: 4px;
+        }
+       
+        
+        
+      .app-header .app-nav-brand-inner {
+    padding-left: 358px !important;
+}
+.app-header .navbar-main {
+    float: right !important;
+}
+.app-header .app-nav-brand {
+    left: 0;
+}
+
+
+/*-ali-*/
+.demo-panel-black.COlor{
+    direction: ltr !important;
+}
+.demo-panel-white #chartdiv-0:first-child{
+    direction: ltr !important;
+}
+svg{
+    position: relative !important;
+}
+.skdslider li p{color: white !important;}
+.slide-desc{background-color: rgba(0,0,0,0.7) !important;}
+a[title="JavaScript charts"]{display: none !important;}
+/*-ali-*/
